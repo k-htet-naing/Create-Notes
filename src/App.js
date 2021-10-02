@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Notes from './Components/Notes';
+import CreateNotes from './Components/CreateNotes';
+import Layout from './container/Layout';
+import Appbar from './Appbar';
 
+const title = "Hello Pikachu"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+         <Switch>
+             <Route exact path ='/'>
+               <Notes />
+             </Route>
+             <Route exact path ='/create'>
+               <CreateNotes />
+             </Route>
+         </Switch>
+      </Layout>
+    </Router>
   );
 }
 

@@ -1,0 +1,16 @@
+{
+  "notes": [
+    {
+      "title": "Project-One-Creating of Notes",
+      "body": "This is my very first MUI x React project, inspiring from one of the youtube channel projects.",
+      "category": "personal",
+      "id": 1
+    },
+    {
+      "title": "Let's create Project-Two",
+      "body": "I have no idea right now haha, but yeah .. something will be coming. stay tuned!",
+      "category": "personal",
+      "id": 4
+    }
+  ]
+}
